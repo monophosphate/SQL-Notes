@@ -22,10 +22,25 @@ FROM EmployeeSalary
 
 --
 
--- Real use case for temp table
+DROP TABLE IF EXISTS #temp_employee2 -- TIP: This was added after the fact and allows you to rerun the script, without already existing table error.
 CREATE TABLE #temp_employee2 (
 	JobTitle varchar(50),
 	EmployeesPerJob int,
 	AvgAge int,
 	AvgSalary int
 )
+
+INSERT INTO #temp_employee2
+SELECT 
+	JobTitle,
+	Count(JobTitle),
+	Avg(Age),
+	Avg(Salary)
+FROM EmployeeDemographics Demo
+JOIN EmployeeSalary Sal
+	ON Demo.EmployeeID = Sal.EmployeeID
+GROUP BY JobTitle
+
+SELECT *
+FROM #temp_employee2
+
