@@ -60,3 +60,4 @@ FROM EmployeeErrors
 
 SELECT FirstName, UPPER(FirstName) -- Changes to uppercase
 FROM EmployeeErrors
+
