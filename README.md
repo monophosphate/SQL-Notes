@@ -18,3 +18,5 @@ Compilation of notes I have written to refresh myself with SQL.
 ['PARTITION BY' Statement](2_Intermediate%20SQL/PARTITION_BY.sql) - Divides rows/query result set into small partitons. Similar to 'GROUP BY' except all rows are shown.<br /> 
 
 ### Advanced SQL
+[CTE 'WITH' Statement](3_Advanced%20SQL/CTE_WITH.sql) - Temporary table from a SELECT statement that can be used in a subsequent SELECT statement.<br />
+[Temp Tables](Basic%20SQL/TEMP_TABLE.sql) - Database table that exists temporarily on the database server.<br />
