@@ -41,3 +41,16 @@ FROM #temp_employee
 EXEC Temp_Employee -- The procedure not only creates a table, but also inserts two joined tables into it, and selects it for us to see.
 
 EXEC Temp_Employee @JobTitle = 'Salesman' -- Using our parameter created in the 'ALTER_PROCEDURE.sql' file.
+
+
+
+-- Simple example of parameters and stored procedures
+
+CREATE PROCEDURE EmployeeSelector
+@ID int
+AS
+SELECT *
+FROM EmployeeDemographics
+WHERE EmployeeID = @ID
+
+EXEC EmployeeSelector @ID = 1012
