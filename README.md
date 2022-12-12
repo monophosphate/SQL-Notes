@@ -1,5 +1,5 @@
 # SQL Notes
-Compilation of notes I have written to refresh myself with SQL.
+This repository contains a collection of SQL notes and examples that demonstrate my proficiency in using SQL to manipulate and query data. The notes cover a range of topics, including common SQL commands, data types, and database concepts, and are designed to showcase my ability to effectively use SQL in a variety of settings.
 # 
 ### Basic SQL
 ['CREATE TABLE' Statement](Basic%20SQL/CREATE_TABLE.sql) - Creates a table.<br />
